@@ -1,0 +1,41 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container {
+    width: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+.title-container a {
+    text-decoration: none;
+    color:rgb(141,198,63);
+}
+.title-container a:hover {
+    text-decoration: none;
+    color:rgb(43,102,83);
+}
+#move-btn{  
+    background-color: rgb(43, 102, 83);
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+    padding: 10px 5px;
+    display: block;
+    text-align: center;
+    width: 500px;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#move-btn:hover{
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41,.175);
+    transform: scale(1.1);
+    transition: .5s;
+}

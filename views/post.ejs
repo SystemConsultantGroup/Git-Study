@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://www.skku.edu/_res/skku/img/common/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel='stylesheet' href='/stylesheets/post.css' />  
+    <title>성균이야기</title>
+
+  </head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+          <a href="/article/">
+            <div class="title-container">
+              <img src="/images/SKKU.jpg" alt="" style="width:70px;">
+              <span style="font-size:3rem;"><strong>성균이야기</strong></span>
+            </div>
+          </a>
+      </div>
+      <div class="input-container">
+          <div>
+              <input id="author" class="input-title" type="text" placeholder="Write Author">
+          </div>
+          <div class="input-content-container">
+              <textarea id="content" class="input-content" placeholder="당신의 성균관대 이야기를 적어주세요"></textarea>
+          </div>
+          <div class="btn-container">
+              <div id="post-btn">
+                  작성하기
+              </div>
+              <div id="cancle-btn">
+              <!-- <div id="cancle-btn" onclick="window.history.go(-1); return false;"> -->
+                  취소
+              </div>
+          </div>
+      </div>
+  </div>
+  </body>
+  <script src="/javascripts/post.js" defer></script>
+</html>

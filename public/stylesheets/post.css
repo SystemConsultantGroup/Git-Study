@@ -1,0 +1,72 @@
+.input-container {
+    width: 700px;
+}
+.input-title {
+    width: 100%;
+    border: 0;
+    color: grey;
+    border-bottom: 4px double black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0;
+    padding: .5rem 0
+
+}
+.input-title:focus {
+    color: black;
+    outline: none;
+}
+.input-content-container {
+    margin-top: 1rem;
+}
+textarea {
+    font-family: inherit;
+    width: 680px;
+    padding: 10px;
+    height: 300px;
+    border: 0;
+    resize: none;
+    font-size: 1rem;
+    color: grey;
+}
+textarea:focus {
+    outline :none;
+    color: black;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+#post-btn {
+    margin-bottom: 1.2rem;
+    font-weight:700;
+    background-color: rgb(141,198,63);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+    padding: 10px 5px;
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    color: white;
+    text-decoration: none;
+}
+#cancle-btn {
+    margin-bottom: 1.2rem;
+    font-weight:700;
+    background-color: grey;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+    padding: 10px 5px;
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    color: white;
+    text-decoration: none;
+}
+#post-btn:hover,
+#cancle-btn:hover {
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41,.175);
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}

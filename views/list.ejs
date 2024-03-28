@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://www.skku.edu/_res/skku/img/common/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel='stylesheet' href='/stylesheets/list.css' />
+    <title>성균이야기</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="title-container">
+              <a href="/article/">
+                  <div class="title-container">
+                    <img src="/images/SKKU.jpg" alt="" style="width:70px;">
+                    <span style="font-size:3rem;"><strong>성균이야기</strong></span>
+                  </div>
+              </a>
+          </div>
+          <div>
+              <div>
+                  <form action="/article">
+                      <input class="search-input" type="text" name="content" placeholder="입력하신 단어를 포함하는 글을 볼 수 있습니다">
+                      <button id="keyword-btn">검 색</button>
+                  </form>
+              </div>
+          </div>
+          <div style="margin-top:1.2rem;">
+              <a href="/article/post" id="post-btn">나의 이야기 남기기</a>
+          </div>
+          <div style="margin-top:2rem; width: 100%">
+              <h3 style="color:grey; display:inline-block">Searched Number of Articles : </h3>
+              <h2 style="display:inline-block"><%= articles.length - 1 %></h2>
+              <div class="article-card-container">
+                <% for(let i = 0; i < articles.length; i++ ) { %>
+                    <div class="article-card">
+                        <div>
+                            <p class="article-card-author"><%= articles[i]['author'] %></p>
+                        </div>
+                        <div class="article-card-content">
+                            <p><%= articles[i]['content'] %></p>
+                        </div>
+                        <div class="article-card-like">
+                            <p>
+                                <img src="/images/like.svg" class="like-btn" onclick="postLike(<%= articles[i]['idx'] %>)">
+                                <span><%= articles[i]['like'] %></span>
+                            </p>              
+                            
+                        </div>
+                    </div>
+                <% } %>
+              </div>
+          </div>
+      </div>
+  </body>
+<script src="/javascripts/list.js" defer></script>
+</html>

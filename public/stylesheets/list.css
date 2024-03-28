@@ -1,0 +1,115 @@
+
+.search-input {
+    text-align: center;
+    width: 500px;
+    height: 35px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+    margin-right: 15px;
+}
+button {  
+    color: white;
+    --button-color: #ffffff;
+    --button-bg-color: #025ce2;
+    --button-hover-bg-color: rgb(7,42, 96);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background: var(--button-bg-color);
+    color: var(--button-color);
+    
+    margin: 0;
+    padding: 0.5rem 1rem;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 4px;
+    width: 130px;
+    display: inline-block;
+    
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+button:active,
+button:hover,
+button:focus {
+    background: var(--button-hover-bg-color);
+    outline: 0;
+}
+#post-btn{  
+    background-color: rgb(255,108,15);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+    padding: 10px 5px;
+    display: block;
+    font-weight:700;
+    text-align: center;
+    width: 500px;
+    color: white;
+    text-decoration: none;
+}
+#post-btn:hover{
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41,.175);
+    transform: scale(1.1);
+    transition: .5s;
+}
+.article-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+}
+.article-card-container a {
+    text-decoration: none;
+    color: black;
+}
+.article-card {
+    background-color: white;
+    width: 210px;
+    min-height: 180px;
+    padding: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(33, 37, 41,.15);
+}
+.article-card-author {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.article-card-title {
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.article-card-content {
+    font-size:1rem;
+    font-weight: 700;
+    color:grey;
+}
+.article-card:hover {
+    box-shadow: 0 1rem 3rem rgba(33, 37, 41,.175);
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: default;
+}
+.like-btn {
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.like-btn:hover {
+    cursor: pointer;
+}
