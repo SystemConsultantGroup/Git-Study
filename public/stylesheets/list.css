@@ -14,7 +14,7 @@
 button {  
     color: white;
     --button-color: #ffffff;
-    --button-bg-color: #025ce2;
+    --button-bg-color: rgb(14, 52, 27);
     --button-hover-bg-color: rgb(7,42, 96);
     -webkit-appearance: none;
     -moz-appearance: none;
