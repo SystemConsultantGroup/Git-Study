@@ -12,6 +12,9 @@ function postArticle() {
     if(!req.author || !req.content) {
         alert("작성자와 내용을 다 기입해주세요!");
     }
+    else if(author.length > 5){
+        alert("작성자 이름은 최대 5글자까지 가능합니다!");
+    }
     else{
         const url = "/article/post"
         fetch(url, {
@@ -33,4 +36,5 @@ function postArticle() {
             console.error('Error Occur!')
         });  
     }
+    
 }
