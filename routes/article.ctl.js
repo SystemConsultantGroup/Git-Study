@@ -56,6 +56,11 @@ const post = {
     post: async (req, res) => {
         const article = req.body;
 
+        if(!req.body.author || !req.body.content) {
+            res.status(400)
+            res.send({ success: false, result: "post body author or content is undefined or null."});
+            return;
+        }
         article['like'] = 0;
         
         const articles = await getArticles();
