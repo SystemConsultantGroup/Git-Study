@@ -20,7 +20,7 @@ const get = {
         console.log(content);
 
         for(let i = 0; i < data.length; ++i) {
-            if(!data[i]['content'].toUpperCase().includes(content)) {
+            if(data[i]['content'].toUpperCase().includes(content)) {
                 let tmp = data[i];
                 tmp['idx'] = i;
                 result.push(tmp);
